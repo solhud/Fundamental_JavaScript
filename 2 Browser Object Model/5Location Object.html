@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Object</title>
+    <style>
+        table,th,td{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <p>location berisi informasi tentang URL saat ini. Merupakan bagian dari window object
+        dan diakses melalui window.location.
+    </p><br><br><br><br>
+    
+    <table>
+        <tr>
+            <th>Metode</th>
+            <th>Deskripsi</th>
+        </tr>
+        <tr>
+            <td>assign()</td>
+            <td>Memuat dokumen baru</td>
+        </tr>
+        <tr>
+            <td>reload()</td>
+            <td>menampilkan ulang dokumen sedang dibuka</td>
+        </tr>
+        <tr>
+            <td>replace()</td>
+            <td>mengganti dokumen yang ada dengan doumen yang baru</td>
+        </tr>
+    </table><br><br>
+
+    <button onclick="myFunct">Coba skuk</button>
+    <p id="coba"></p>
+
+    <script>
+        var x = location.host;
+        var y = location.origin;
+        var z = location.pathname;
+
+        document.getElementById("coba").innerHTML=x+"<br/>"+y+"<br/>"+z;
+        confirm("Host :("+x+") Origin: ("+y+") Pathname: ("+z+"). Anda ingin memuat halaman?");
+        location.reload();
+    </script>
+    
+</body>
+</html>

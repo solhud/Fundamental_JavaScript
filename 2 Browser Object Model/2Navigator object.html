@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator Object</title>
+</head>
+<body>
+    <p>navigator object adalah informasi tentang browser pengunjung</p>
+    <p>dapat ditulis tanpa jendela awalan</p>
+
+    <p>Lihat detail browsser anda </p>
+
+    <button onclick="myFunct()">Klik bosku</button>
+    <p id="coba"></p>
+
+    <script>
+        function myFunct(){
+            var x ="Java Enabled :"+navigator.javaEnabled();
+            document.getElementById("coba").innerHTML =
+            // nama browser
+            "Nama : "+navigator.appName+
+            // kode nama browser
+            "<br>Code nama: "+navigator.appCodeName+
+            // platform perangkat
+            "<br>Plat Form: "+navigator.platform+
+            // version
+            "<br> APP VERSION :"+navigator.appVersion+
+            // geolocetion
+            "<br> Geolocation :"+navigator.geolocation+
+
+            "<br>"+x;
+        }
+    </script>
+    
+</body>
+</html>

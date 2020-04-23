@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Object</title>
+</head>
+<body>
+    <p></p>
+    <p>Screen object berisi informasi tentang layar pengguna</p>
+    <p>dapat ditulis tanpa jendela awalan</p>
+
+    <p id="coba"></p>
+
+    <script>
+        document.getElementById("coba").innerHTML=
+        "Screen height "+ screen.height+"<br/>"+
+        "Screen width "+ screen.width+ "<br/>"+
+        "Available screen height "+screen.availHeight+"<br/>"+
+        "Screen color "+screen.colorDepth+"<br/>"+
+        "Screen pixel depth"+screen.pixelDepth;
+    </script>
+</body>
+</html>

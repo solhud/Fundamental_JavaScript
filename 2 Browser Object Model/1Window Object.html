@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+</head>
+<body>
+    <p>klik tombol untuk mecoba nggih</p>
+    <button onclick="MyFunct()">Klik</button>
+    
+    <p id="coba"></p>
+    <script>
+        function MyFunct(){
+
+        
+        var w= window.innerWidth;
+        var h = window.innerHeight;
+
+        document.getElementById("coba").innerHTML = "Width : "+w+"<br>Heigt :"+h;
+        alert("Width :"+w+"dan height :"+h);
+        }
+    </script>
+</body>
+</html>

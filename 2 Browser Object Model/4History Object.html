@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menggunakan Property Goforward</title>
+</head>
+<body>
+    <p>Akan menggunakan properti <b>Go Forward</b> untuk menuju
+    ke riwayat penelusuran berikutnya. History.forward() adalah
+    metode memuat URL berikutnya dalam daftar History
+    .Metode ini sama dengan saat anda mengklik tombol Forward dalam browser</p>
+    
+
+    <button onclick="goForward()">Go Forward</button>
+    <p>perhatikan bahwa mengklik tombol Go Forward di sini tidak akan menghasilkan
+    tindakan apapun jika tidak ada URL berikutnya dalam daftar sejarah
+    </p>
+
+    <script>
+        function goForward(){
+            window.history.forward()
+        }
+    </script>
+
+    <p>Akan menggunakan properti <b>Go Back()</b> untuk menuju
+    ke riwayat penelusuran sebelumnya. History.back() adalah metode memuat URL sebelumnya dalam daftar 
+    history. Metode ini sama dengan saat anda mengklik tombol back dalam brwoser</p><br> <br>
+
+    <button onclick="goBack()">Go Back</button>
+    <p>Klik tombol go back tidak akan menghasilkan tindakan apapun
+        jika tidak ada URL sebelumnya dalam daftar sejarah.
+    </p>
+    <script>
+        function goBack(){
+            window.goBack()
+        }
+    </script>
+
+
+    
+</body>
+</html>
